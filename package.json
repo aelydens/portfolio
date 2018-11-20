@@ -10,7 +10,7 @@
     "dev": "parcel src/index.html",
     "build": "parcel build src/index.html",
     "heroku-postbuild": "npm run build",
-    "start": "serve -s build"
+    "start": "serve dist/"
   },
   "repository": {
     "type": "git",
@@ -22,6 +22,9 @@
     "url": "https://github.com/aelydens/portfolio/issues"
   },
   "homepage": "https://github.com/aelydens/portfolio#readme",
+  "engines": {
+    "node": "9.10.1"
+  },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
     "eslint": "^5.9.0",
@@ -35,6 +38,7 @@
   },
   "dependencies": {
     "react": "^16.6.3",
-    "react-dom": "^16.6.3"
+    "react-dom": "^16.6.3",
+    "serve": "^10.1.1"
   }
 }
