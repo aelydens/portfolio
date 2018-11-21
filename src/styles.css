@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css?family=Pacifico|Raleway");
+
+* {
+  margin: 0;
+  padding: 0;
+  color: #222222;
+  font-family: "Raleway", sans-serif;
+}
+
+body {
+  background-color: #fbc915;
+}
+
+.title {
+  font-family: "Pacifico", cursive;
+  font-size: 55px;
+}
+
+.main {
+  padding: 10%;
+}
+
+.greeting {
+  padding-top: 10%;
+  font-size: 25px;
+}
+
+.link:hover {
+  background-color: #ee4e24;
+}
+
+.link {
+  text-decoration: none;
+  padding-left: 5px;
+}
+
+.navigation li {
+  display: inline-block;
+  margin: 15px;
+  position: relative;
+}
+
+.navigation li:first-child {
+  margin-left: 0px;
+}
+
+.navigation ul {
+  display: flex;
+  align-items: flex-start;
+  list-style-type: none;
+}
+
+@media screen and (max-width: 600px) {
+  .navigation ul {
+    justify-content: center;
+    background-color: #ee4e24;
+  }
+
+  .main {
+    margin: auto;
+    padding: 0;
+  }
+
+  .greeting {
+    padding: 10%;
+    font-size: 20px;
+  }
+
+  .greeting p::before {
+    content: "*";
+    color: #ee4e24;
+    position: absolute;
+    bottom: -18px;
+    left: 11px;
+    font-size: 70px;
+  }
+
+  .greeting p {
+    padding-bottom: 10px;
+  }
+
+  .title {
+    text-align: center;
+    font-size: 45px;
+  }
+}
+
+.navigation .active {
+  border-bottom: solid;
+  padding-bottom: 7px;
+  font-weight: 900;
+}
+
+.navigation .active::before {
+  content: "*";
+  color: #ee4e24;
+  position: absolute;
+  bottom: -18px;
+  left: 11px;
+  font-size: 70px;
+}
