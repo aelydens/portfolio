@@ -50,6 +50,31 @@ body {
   list-style-type: none;
 }
 
+.navigation .active {
+  border-bottom: solid;
+  padding-bottom: 9px;
+  font-weight: 900;
+}
+
+.navigation .active::before {
+  content: "*";
+  color: #ee4e24;
+  position: absolute;
+  bottom: -18px;
+  left: 11px;
+  font-size: 70px;
+}
+
+.social-links {
+  display: flex;
+  padding-top: 60px;
+}
+
+.social-links .social-icon {
+  height: 30px;
+  padding-right: 25px;
+}
+
 @media screen and (max-width: 600px) {
   .navigation ul {
     justify-content: center;
@@ -61,7 +86,8 @@ body {
     padding: 0;
   }
 
-  .greeting {
+  .greeting,
+  .social-links {
     padding: 10%;
     font-size: 20px;
   }
@@ -74,19 +100,9 @@ body {
     text-align: center;
     font-size: 45px;
   }
-}
 
-.navigation .active {
-  border-bottom: solid;
-  padding-bottom: 7px;
-  font-weight: 900;
-}
-
-.navigation .active::before {
-  content: "*";
-  color: #ee4e24;
-  position: absolute;
-  bottom: -18px;
-  left: 11px;
-  font-size: 70px;
+  .social-links {
+    justify-content: space-around;
+    padding-top: 25px;
+  }
 }
