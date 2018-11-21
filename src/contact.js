@@ -1,10 +1,13 @@
 import React from "react";
 
+import { SocialLinks } from "./social-links";
+
 export default class Contact extends React.Component {
   render() {
     return (
-      <div>
-        <h1>contacts!</h1>
+      <div className="contact">
+        <h1 className="title">Contact Me</h1>
+        <SocialLinks />
       </div>
     );
   }
