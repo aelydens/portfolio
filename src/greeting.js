@@ -13,7 +13,7 @@ export const Greeting = () => {
         <a href="https://thoughtbot.com/" title="thoughtbot" className="link">
           thoughtbot
         </a>{" "}
-        and make art in Austin, TX.
+        in Austin, TX.
       </p>
       <p>
         I previously worked at
@@ -24,7 +24,11 @@ export const Greeting = () => {
         <a href="https://www.kiva.org/" title="Kiva" className="link">
           Kiva
         </a>
-        , and TechSoup.
+        , and
+        <a href="https://www.techsoup.org/" title="Techsoup" className="link">
+          TechSoup
+        </a>
+        .
       </p>
     </div>
   );

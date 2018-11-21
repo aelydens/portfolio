@@ -38,19 +38,21 @@ body {
   padding-top: 40px;
 }
 
-.link:hover {
-  background-color: #ee4e24;
-}
-
 .link {
   text-decoration: none;
   padding-left: 5px;
+}
+
+.link:hover {
+  text-decoration: underline;
+  text-decoration-color: #ee4e24;
 }
 
 .navigation li {
   display: inline-block;
   margin: 15px;
   position: relative;
+  cursor: pointer;
 }
 
 .navigation li a {
@@ -93,6 +95,14 @@ body {
   padding-right: 25px;
 }
 
+svg {
+  fill: #ee4e24 !important;
+}
+
+.hat {
+  height: 30px;
+}
+
 @media screen and (max-width: 600px) {
   .navigation ul {
     justify-content: center;
@@ -124,5 +134,9 @@ body {
   .social-links {
     justify-content: space-around;
     padding-top: 25px;
+  }
+
+  .work {
+    text-align: center;
   }
 }
