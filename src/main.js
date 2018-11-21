@@ -1,7 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { SocialLinks } from "./social-links";
-import { Greeting } from "./greeting";
+
+import { Router, Link } from "@reach/router";
+
+import Work from "./work";
+import About from "./about";
+import Contact from "./contact";
 
 class App extends React.Component {
   render() {
@@ -11,14 +15,23 @@ class App extends React.Component {
           <div className="main">
             <div className="navigation">
               <ul>
-                <li className="active">About</li>
-                <li>Work</li>
-                <li>Contact</li>
+                <li className="active">
+                  <Link to="/">About</Link>
+                </li>
+                <li>
+                  <Link to="/work">Work</Link>
+                </li>
+                <li>
+                  <Link to="/contact">Contact</Link>
+                </li>
               </ul>
             </div>
 
-            <Greeting />
-            <SocialLinks />
+            <Router>
+              <About path="/" />
+              <Work path="/work" />
+              <Contact path="/contact" />
+            </Router>
           </div>
         </div>
       </div>

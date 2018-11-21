@@ -40,6 +40,10 @@ body {
   position: relative;
 }
 
+.navigation li a {
+  text-decoration: none;
+}
+
 .navigation li:first-child {
   margin-left: 0px;
 }
@@ -63,6 +67,7 @@ body {
   bottom: -18px;
   left: 11px;
   font-size: 70px;
+  z-index: -1000;
 }
 
 .social-links {
