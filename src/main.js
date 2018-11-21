@@ -1,11 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import { Router, Link } from "@reach/router";
+import { Router } from "@reach/router";
 
 import Work from "./work";
 import About from "./about";
 import Contact from "./contact";
+import Navigation from "./navigation";
 
 class App extends React.Component {
   render() {
@@ -13,19 +14,7 @@ class App extends React.Component {
       <div>
         <div className="container">
           <div className="main">
-            <div className="navigation">
-              <ul>
-                <li className="active">
-                  <Link to="/">About</Link>
-                </li>
-                <li>
-                  <Link to="/work">Work</Link>
-                </li>
-                <li>
-                  <Link to="/contact">Contact</Link>
-                </li>
-              </ul>
-            </div>
+            <Navigation />
 
             <Router>
               <About path="/" />
