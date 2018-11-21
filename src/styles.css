@@ -66,15 +66,6 @@ body {
     font-size: 20px;
   }
 
-  .greeting p::before {
-    content: "*";
-    color: #ee4e24;
-    position: absolute;
-    bottom: -18px;
-    left: 11px;
-    font-size: 70px;
-  }
-
   .greeting p {
     padding-bottom: 10px;
   }
